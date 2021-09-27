@@ -74,7 +74,8 @@ body {
 	font-size: 100px;
 	font-weight: 100;
 	text-align: center;
-	color: rgba(175, 47, 47, 0.15);
+	
+	color: rgba(240, 47, 47, 0.918);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
@@ -375,5 +376,29 @@ html .clear-completed:active {
 
 	.filters {
 		bottom: 10px;
+	}
+}
+
+.turn {
+	width: 2rem;
+	height: 2rem;
+
+	margin: auto;
+
+	border-radius: 100rem;
+	border: 5px solid red;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	background-color: transparent;
+	animation: turn360 1s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes turn360 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }

@@ -1,6 +1,6 @@
-import html from '../core.js'
-import ToDoItem from './todoitem.js'
-import { connect } from '../store.js'
+import html from '../js/core.js'
+import ToDoItem from './ToDoItem.js'
+import { connect } from '../js/store.js'
 
 const connecter = connect()
 
@@ -18,7 +18,7 @@ function ToDoList({ todos: todoChange }) {
             <input id="toggle-all" class="toggle-all" type="checkbox">
             <label for="toggle-all">Mark all as complete</label>
             <ul class="todo-list">
-                ${todoChange.map(todo => ToDoItem({todoKey: todo}))}
+                ${todoChange.map((todo, index) => ToDoItem({todoKey: todo, index}))}
         </section>
     `
 }
