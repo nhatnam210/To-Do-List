@@ -1,4 +1,4 @@
-import html from '../core.js'
+import html from '../js/core.js'
 
 function Footer() {
     return html`
