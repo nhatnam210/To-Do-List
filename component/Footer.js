@@ -10,7 +10,7 @@ function Footer({ todos, filter, filters }) {
         <ul class="filters">
             ${Object.keys(filters).map(typeKey => html`
                 <li>
-                    <a class="${filter === typeKey && 'selected'}" href="#" 
+                    <a class="${ typeKey === filter  && 'selected'}" href="#" 
                     onclick="dispatch('switchFilter','${typeKey}')"
                     >
                     ${typeKey[0].toLocaleUpperCase()+typeKey.slice(1)}
