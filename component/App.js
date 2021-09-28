@@ -5,6 +5,7 @@ import Footer from '../component/Footer.js'
 import { connect } from '../js/store.js'
 
 const connecter = connect()
+// console.log("connecter",connect()(App)())
 
 function App({ todos }) {
     return  html`

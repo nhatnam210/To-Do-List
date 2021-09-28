@@ -24,12 +24,17 @@ export function createStore(reducer) {
             render()
         },
 
-        connect(selector = state => state) {
+        connect(selector = (state => state)) {
             return (component) => (props, ...args) =>
-                component(Object.assign({}, props, selector(state), ...args))
-                
+                    component(Object.assign({}, props, selector(state), ...args))
         },
-
+        // connect (component) { return (props, ...args) =>
+        //     component(Object.assign({}, props, state, ...args))
+        // },
+        // connect(selector = (state => state)) {
+        //     return (component) => 
+        //             component( selector(state))
+        // },
         dispatch(action, ...args) {
             state = reducer(state, action, args)
             render()
