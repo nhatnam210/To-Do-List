@@ -12,7 +12,7 @@ function ToDoItem({ todoKey, index }) {
                 onchange = "dispatch('toggle', ${index})"
                 >
                 <label>${todoKey.title}</label>
-                <button class="destroy"></button>
+                <button class="destroy" onclick="dispatch('destroy', ${index})"></button>
             </div>
             <input class="edit" value="${todoKey.title}">
         </li>
