@@ -25,6 +25,7 @@ function ToDoList({ todos: todosChange, filter, filters, editIndex }) {
                     .map((todo, index) => 
                         ToDoItem({todoKey: todo, index, editIndex})
                     )}
+            </ul>
         </section>
     `
 }
