@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  transition: ease 0.5s;
+  transition: ease .3s;
 }
 
 button {
@@ -64,6 +64,7 @@ body {
   position: relative;
   border: 1px solid var(--text-sub-color-mode);
   box-shadow: 0 10px 20px 0 var(--text-sub-color-mode);
+  transition: all linear .3s;
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -144,9 +145,11 @@ body {
 
 input.new-todo::-webkit-input-placeholder{
 color:var(--text-sub-color-mode) ;
+transition: all linear .3s;
 }
 input.new-todo::-moz-input-placeholder{
 color:var(--text-sub-color-mode) ;
+transition: all linear .3s;
 }
 
 .main {
@@ -181,6 +184,7 @@ color:var(--text-sub-color-mode) ;
   font-size: 22px;
   color: var(--text-color-mode);
   padding: 10px 27px 10px 27px;
+  transition: all linear .3s;
 }
 
 .toggle-all:checked + label:before {
@@ -248,6 +252,7 @@ color:var(--text-sub-color-mode) ;
   background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center left;
+  transition: all linear .001s
 }
 
 .todo-list li .toggle:checked + label {
@@ -258,9 +263,10 @@ color:var(--text-sub-color-mode) ;
   padding: 15px 15px 15px 60px;
   display: block;
   line-height: 1.2;
-  transition: color 0.4s;
+  transition: color .3s;
   font-size: 20px;
   word-break: break-all;
+  transition: all linear .1s
 }
 
 .todo-list li.completed label {
@@ -324,12 +330,14 @@ color:var(--text-sub-color-mode) ;
     0 8px 0 -3px var(--background-color-mode), 0 9px 1px -3px rgba(0, 0, 0, 0.2),
     0 16px 0 -6px var(--background-color-mode),
     0 17px 2px -6px rgba(0, 0, 0, 0.2);
+  transition: all linear .3s;
 }
 
 .todo-count {
   float: left;
   text-align: left;
   color: var(--text-color-mode);
+  transition: all linear .3s;
 }
 
 .todo-count strong {
@@ -357,6 +365,7 @@ color:var(--text-sub-color-mode) ;
   border: 1px solid transparent;
   border-radius: 3px;
   color: var(--text-color-mode);
+  transition: all linear .3s;
 }
 
 .filters li a:hover {
@@ -374,6 +383,7 @@ html .clear-completed:active {
   line-height: 20px;
   text-decoration: none;
   cursor: pointer;
+  transition: all linear .3s;
 }
 
 .clear-completed:hover {
