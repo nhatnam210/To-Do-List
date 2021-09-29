@@ -1,5 +1,5 @@
-import html from '../js/core.js'
-import { connect } from '../js/store.js'
+import html from '../lib/core.js'
+import { connect } from '../lib/store.js'
 
 function Footer({ todos, filter, filters }) {
     return html`

@@ -1,8 +1,8 @@
-import html from '../js/core.js'
-import Header from '../component/Header.js'
-import ToDoList from '../component/ToDoList.js'
-import Footer from '../component/Footer.js'
-import { connect } from '../js/store.js'
+import html from '../lib/core.js'
+import Header from './Header.js'
+import ToDoList from './ToDoList.js'
+import Footer from './Footer.js'
+import { connect } from '../lib/store.js'
 
 const connecter = connect()
 // console.log("connecter",connect()(App)())
