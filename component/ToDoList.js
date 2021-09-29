@@ -1,6 +1,6 @@
-import html from '../js/core.js'
+import html from '../lib/core.js'
 import ToDoItem from './ToDoItem.js'
-import { connect } from '../js/store.js'
+import { connect } from '../lib/store.js'
 
 // const connecter = connect()
 

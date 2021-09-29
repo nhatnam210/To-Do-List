@@ -1,4 +1,4 @@
-import html from '../js/core.js'
+import html from '../lib/core.js'
 // import { connect } from '../js/store.js'
 
 //Destructing : // gióng qua ToDolist đc:   { todoKey } = {todoKey: todo} 
