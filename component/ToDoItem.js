@@ -18,7 +18,9 @@ function ToDoItem({ todoKey, index, editIndex }) {
                 <label ondblclick="dispatch('startEdit',${index})">
                     ${todoKey.title}
                 </label>
-                <button class="destroy" onclick="dispatch('destroy', ${index})"></button>
+                <div class="destroy-wrap">
+                    <button class="destroy" onclick="dispatch('destroy', ${index})"></button>
+                </div>
             </div>
             <input 
                 class="edit" 
